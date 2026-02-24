@@ -10,8 +10,8 @@ _WeatherModel _$WeatherModelFromJson(Map<String, dynamic> json) =>
     _WeatherModel(
       cityName: json['name'] as String,
       temperature: (_readTemp(json, 'temperature') as num).toDouble(),
-      description: _readDesc(json, 'description'),
-      icon: _readIcon(json, 'icon'),
+      description: _readDesc(json, 'description') as String,
+      icon: _readIcon(json, 'icon') as String,
       humidity: (_readHumidity(json, 'humidity') as num).toInt(),
       windSpeed: (_readWind(json, 'windSpeed') as num).toDouble(),
     );

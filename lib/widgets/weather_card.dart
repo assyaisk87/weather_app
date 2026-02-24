@@ -66,7 +66,7 @@ class _WeatherCardState extends State<WeatherCard>
               Text('Скорость ветра: ${widget.weatherModel.windSpeed}'),
 
               SizedBox(height: 20),
-              Text('Прогноз на 5 дня'),
+              Text('Прогноз на 5 дней'),
               SizedBox(height: 10),
               SizedBox(
                 height: 180,
